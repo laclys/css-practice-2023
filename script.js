@@ -31,9 +31,11 @@ function collectFileData(dir) {
 collectFileData(folderPath)
 
 // 生成Markdown文档内容
+
 const markdownContent = fileData
   .map((item) => {
-    return `* [${item.fileName}](https://laclys.github.io/css-practice-2023/${item.relativePath})`
+    const itemTitle = item.fileName?.split('.html')?.[0] || item.fileName
+    return `* [${itemTitle}](https://laclys.github.io/css-practice-2023/${item.relativePath})`
   })
   .join('\n')
 
@@ -41,6 +43,13 @@ const markdownContent = fileData
 const markdownFilePath = './README.md'
 
 // 将Markdown内容写入文件
-fs.writeFileSync(markdownFilePath, markdownContent, 'utf-8')
 
-console.log(`Markdown文件已生成：${markdownFilePath}`)
+const title = `
+  CSS Demo
+  \n
+  \n
+`
+
+fs.writeFileSync(markdownFilePath, title + markdownContent, 'utf-8')
+
+console.log(`Markdown文件已生成: ${markdownFilePath}`)

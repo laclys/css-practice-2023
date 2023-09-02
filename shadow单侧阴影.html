@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 阴影的扩张半径可以为负值
+  们可以设置元素的阴影的模糊半径与它的扩张半径一样，但是，扩张半径为相等的负值
+  此时，元素将看不到任何阴影，这是由于生成的阴影将被遮挡在整个元素之下。 -->
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    div {
+      margin-bottom: 40px;
+      width: 200px;
+      height: 120px;
+      line-height: 120px;
+      text-align: center;
+      border: 1px solid black;
+    }
+
+    .box1 {
+      box-shadow: -7px 0px 5px -5px #999;
+    }
+
+    .box2 {
+      box-shadow: 7px 0px 5px -5px #999;
+    }
+
+    .box3 {
+      box-shadow: 0px -7px 5px -5px #999;
+    }
+
+    .box4 {
+      box-shadow: 0px 7px 5px -5px #999;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1">左</div>
+  <div class="box2">右</div>
+  <div class="box3">上</div>
+  <div class="box4">下</div>
+</body>
+<!-- 如果想要单侧阴影的范围更大，可以利用 clip-path，利用它进行元素的裁剪，只保留单侧的阴影效果 -->
+
+</html>

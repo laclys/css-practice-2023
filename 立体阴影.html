@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      position: relative;
+      margin-top: 200px;
+      margin-left: 200px;
+      width: 600px;
+      height: 100px;
+      background: hsl(48, 100%, 50%);
+      border-radius: 20px;
+    }
+
+    div::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      right: 5%;
+      bottom: 0;
+      border-radius: 10px;
+      background: hsl(48, 100%, 20%);
+      transform: translate(0, -15%) rotate(-4deg);
+      transform-origin: center center;
+      box-shadow: 0 0 20px 15px hsl(48, 100%, 20%);
+      z-index: -1;
+    }
+
+
+    p {
+      position: relative;
+      margin-top: 100px;
+      margin-left: 200px;
+      width: 600px;
+      height: 100px;
+      border-radius: 20px;
+      background: hsl(199, 98%, 48%);
+      box-shadow: 0 0 5px 2px hsl(199, 98%, 40%);
+    }
+
+    p::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      right: 5%;
+      bottom: 15%;
+      border-radius: 10px;
+      background: hsl(199, 98%, 20%);
+      transform: translate(0, -20%) rotate(-4deg);
+      transform-origin: center center;
+      box-shadow: 0 0 20px 15px hsl(199, 98%, 20%);
+      z-index: -1;
+    }
+
+    p::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      right: 5%;
+      bottom: 15%;
+      border-radius: 10px;
+      background: hsl(199, 98%, 20%);
+      transform: translate(0, -20%) rotate(4deg);
+      transform-origin: center center;
+      box-shadow: 0 0 20px 15px hsl(199, 98%, 20%);
+      z-index: -1;
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+  <!-- before、after伪元素二者叠加 -->
+  <p></p>
+</body>
+
+</html>

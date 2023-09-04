@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      background: #fff;
+    }
+
+    /* *:not(#foo) {
+      pointer-events: none;
+    } */
+
+    #foo {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+      background: #fff;
+      /* 参数扩散半径设置得特别大（足够覆盖整个页面即可） */
+      box-shadow: 0 0 0 19200px rgba(0, 0, 0, .3);
+      cursor: pointer;
+      transition: all .2s;
+    }
+
+    #foo:hover {
+      box-shadow: none;
+    }
+
+    p {
+      pointer-events: none;
+      user-select: none;
+    }
+
+    /* 使用 box-shadow 生成的阴影，它是无法阻止它背后元素的交互事件的，
+    譬如阴影后面的元素还是可以被 hover 和 click，使用这种方式时，
+    需要配合 pointer-event 一起，禁止掉元素的点击相关事件 */
+  </style>
+</head>
+
+<body>
+  <p>Content</p>
+  <div id="foo">
+    box-shadow模拟遮罩层
+  </div>
+  <p>Content</p>
+
+  <!-- box-shadow 属于耗性能样式，不同样式在消耗性能方面也有所不同，box-shadow 在渲染方面更加耗费性能，因为它的绘制代码执行时间较长 -->
+</body>
+
+</html>

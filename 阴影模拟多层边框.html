@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      margin: 50px auto;
+      width: 200px;
+      height: 100px;
+      background: deeppink;
+      /* box-shadow: h-shadow v-shadow blur spread color inset; */
+      box-shadow:
+        inset 0 0 0 6px #fff,
+        0 0 0 10px #333,
+        0 0 0 15px #aaa,
+        0 2px 5px 15px #666;
+    }
+    /* 阴影并不是实际的边框，它们不占据元素的空间（也就是不属于盒子模型的一部分），也不能被 box-sizing 属性所控制 */
+  </style>
+</head>
+
+<body>
+  <div></div>
+</body>
+
+</html>

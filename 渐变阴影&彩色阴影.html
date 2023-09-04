@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      width: 100%;
+
+    }
+
+    div {
+      position: relative;
+      margin: auto;
+      width: 100px;
+      height: 100px;
+      background: url(https://avatars.githubusercontent.com/u/22010181) no-repeat center center;
+      background-size: 100% 100%;
+    }
+
+    div::after {
+      content: "";
+      position: absolute;
+      top: 10%;
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      background-size: 100% 100%;
+      filter: blur(10px) brightness(80%) opacity(.8);
+      z-index: -1;
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+</body>
+
+</html>

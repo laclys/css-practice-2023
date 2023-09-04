@@ -39,6 +39,8 @@ const markdownContent = fileData
   })
   .join('\n')
 
+const dataLen = fileData?.length || 0
+
 // 指定要写入的Markdown文件路径
 const markdownFilePath = './README.md'
 const indexPagePath = './index.md'
@@ -51,7 +53,16 @@ const title = `
   \n
 `
 
-fs.writeFileSync(markdownFilePath, title + markdownContent, 'utf-8')
+const footer = dataLen
+  ? `
+  \n
+  \n
+  Total ${dataLen}  ✅
+  \n
+`
+  : ''
+
+fs.writeFileSync(markdownFilePath, title + markdownContent + footer, 'utf-8')
 fs.writeFileSync(indexPagePath, markdownContent, 'utf-8')
 
 console.log(`文件已生成: ${markdownFilePath}`)

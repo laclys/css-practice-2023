@@ -68,3 +68,5 @@ Ref: 掘金- CSS 技术揭秘与实战通关 Note
 
 - 作用了 filter 和 backdrop-filter 的元素会导致 3D 效果失效
 - 用了 filter 和 backdrop-filter 的元素会使内部的 fixed 定位失效
+
+### drop-shadow 与 box-shadow 的异同

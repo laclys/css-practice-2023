@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+    .coupon {
+      display: inline-block;
+      height: 88px;
+      width: 300px;
+      margin-top: 10px;
+
+      /* //参数说明：园渐变或线性渐变 [left|right] 坐标数 [top|bottom] 坐标数 repeat参数, */
+      background: radial-gradient(circle at 10px 10px, transparent 5px, #fff 5px) left -10px top 0 repeat-y,
+        linear-gradient(90deg, #fff, #feaaaa) left 10px top 0 no-repeat,
+        radial-gradient(circle at 10px 0, transparent 5px, #feaaaa 5px) left calc(40% - 5px) top 0 no-repeat,
+        radial-gradient(circle at 10px 10px, transparent 5px, #feaaaa 5px) left calc(40% - 5px) bottom 0px no-repeat,
+        linear-gradient(90deg, #feaaaa, #fe434c) right 10px top 0 no-repeat,
+        radial-gradient(circle at 10px 10px, transparent 5px, #fe434c 5px) right -10px top 0 repeat-y;
+
+      /* //背景结构大小，顺序对应background里的背景内容 */
+      background-size: 20px 17px,
+        calc(40% - 15px) 88px,
+        20px 78px,
+        20px 10px,
+        calc(60% - 15px) 88px,
+        22px 17px;
+
+    }
+  </style>
+</head>
+
+<body style="background-color: rgba(127, 193, 255, 1)">
+  <div style="width: 500px">
+    <div class="coupon"></div>
+    <div class="coupon"></div>
+    <div class="coupon"></div>
+  </div>
+</body>
+
+</html>

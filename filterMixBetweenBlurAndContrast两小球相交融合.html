@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+
+    .g-container {
+      margin: auto;
+      position: relative;
+      width: 300px;
+      height: 200px;
+      filter: blur(6px) contrast(20);
+      background: #fff;
+    }
+
+    .g-ball-a {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #333;
+      top: 40px;
+      left: 40px;
+      box-sizing: border-box;
+      animation: filterBallMove 4s ease-out infinite;
+    }
+
+    .g-ball-b {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #3F51B5;
+      top: 60px;
+      right: 40px;
+      animation: filterBallMove2 4s ease-out infinite;
+    }
+
+    @keyframes filterBallMove {
+      50% {
+        left: 140px;
+      }
+    }
+
+    @keyframes filterBallMove2 {
+      50% {
+        right: 140px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="g-container">
+    <div class="g-ball-a"></div>
+    <div class="g-ball-b"></div>
+  </div>
+</body>
+
+</html>

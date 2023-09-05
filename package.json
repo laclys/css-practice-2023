@@ -1,0 +1,16 @@
+{
+  "name": "css-practice-2023",
+  "version": "1.0.0",
+  "description": "CSS Demo",
+  "main": "script.js",
+  "scripts": {
+    "script": "node script.js",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "husky": "^8.0.3"
+  }
+}

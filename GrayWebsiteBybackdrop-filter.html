@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: scroll;
+      /* filter: grayscale(.9); */
+    }
+
+    html::before {
+      content: "";
+      position: absolute;
+      /* 等同于 `top: 0; right: 0; bottom: 0; left: 0; */
+      inset: 0;
+      /* 首屏置灰用这个，全局用filter,并且放在html中。 */
+      backdrop-filter: grayscale(105%);
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    body {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 12px;
+    }
+
+    div {
+      width: 200px;
+      height: 200px;
+      background: url(./pics/pic.png) no-repeat;
+      background-size: cover;
+      cursor: pointer;
+      transition: .3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</body>
+
+</html>

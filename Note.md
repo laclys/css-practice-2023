@@ -70,3 +70,44 @@ Ref: 掘金- CSS 技术揭秘与实战通关 Note
 - 用了 filter 和 backdrop-filter 的元素会使内部的 fixed 定位失效
 
 ### drop-shadow 与 box-shadow 的异同
+
+- box-shadow 属性在元素的整个框后面创建一个矩形阴影；
+- drop-shadow() 滤镜用于创建一个符合元素（图像）本身形状（alpha 通道）的阴影
+- box-shadow 有内阴影，内阴影使用关键字 inset 进行描述，而 drop-shadow 是没有内阴影的；
+- box-shadow 多一个阴影扩散半径参数，drop-shadow 是没有阴影扩散半径参数的。
+
+- 设置了 drop-shadow() 的元素，它不单单是针对自身元素，还会向下寻找所有子元素的形状（alpha 通道），对其设置阴影
+- box-shadow 只作用于自身
+
+### inset
+
+`inset`属性用作定位元素的 top、right、bottom、left 这些属性的简写。类似于 margin 和 padding 属性，依照“上右下左”的顺序
+
+```css
+inset: 0;
+/* 等同于 `top: 0; right: 0; bottom: 0; left: 0;` */
+inset: 1px 2px;
+/* 等同于 `top: 1px; right: 2px; bottom: 1px; left: 2px;` */
+inset: 1px 2px 3px;
+/* 等同于 `top: 1px; right: 2px; bottom: 3px; left: 2px;` */
+inset: 1px 2px 3px 4px;
+/* 等同于 `top: 1px; right: 2px; bottom: 3px; left: 4px;` */
+```
+
+### filter: opacity 与 opacity
+用法一致
+```css
+div {
+    filter: opacity(35%);
+}
+// OR
+div {
+    opacity: 0.35;
+}
+
+```
+- filter 滤镜会导致 3D 失效和 position: fixed 定位失效，这个属于所有滤镜的特性。opacity 则不会
+- 使用 filter: opacity 能够更好地获得浏览器提供的硬件加速支持，也就是获得更好的性能。
+从层叠上下文和包含块的角度而言，filter: opacity 和 opacity 都会生成一个新的层叠上下文，
+但是只有 filter: opacity 会生成包含块（Containing Block）。当然，对于现代浏览器，
+这两者的性能差异，几乎可以忽略。

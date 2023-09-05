@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+    }
+
+    .g-container {
+      margin-top: 100px;
+      filter:
+        drop-shadow(5px 10px 2px #f00) drop-shadow(-5px -10px 2px #0f0);
+    }
+
+    .drop-shadow {
+      position: relative;
+      border: 50px solid transparent;
+      border-top: 50px solid #000;
+    }
+
+    .drop-shadow::after {
+      content: "";
+      position: absolute;
+      top: -100px;
+      left: 80px;
+      border: 50px solid transparent;
+      border-bottom: 50px solid #000;
+    }
+
+    .drop-shadow::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      right: 100px;
+      border: 50px solid transparent;
+      border-right: 50px solid #000;
+    }
+  </style>
+</head>
+<!-- 设置了 drop-shadow() 的元素，它不单单是针对自身元素，还会向下寻找所有子元素的形状（alpha 通道），对其设置阴影 -->
+<body>
+  <div class="g-container">
+    <div class="drop-shadow"></div>
+
+  </div>
+</body>
+
+</html>

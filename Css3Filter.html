@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+    }
+
+    div {
+      width: 80px;
+      height: 80px;
+      background-image: url(./pics/pic.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .blur {
+      filter: blur(5px);
+    }
+
+    .brightness {
+      filter: brightness(0.4);
+    }
+
+    .contrast {
+      filter: contrast(200%);
+    }
+
+    .drop-shadow {
+      filter: drop-shadow(16px 16px 20px blue);
+    }
+
+    .grayscale {
+      filter: grayscale(50%);
+    }
+
+    .hue-rotate {
+      filter: hue-rotate(90deg);
+    }
+
+    .invert {
+      filter: invert(75%);
+    }
+
+    .opacity {
+      filter: opacity(25%);
+    }
+
+    .saturate {
+      filter: saturate(30%);
+    }
+
+    .sepia {
+      filter: sepia(60%);
+    }
+
+    .mix1 {
+      filter: contrast(150%) brightness(1.5)
+    }
+
+    .mix2 {
+      filter: brightness(1.5) contrast(150%)
+    }
+  </style>
+</head>
+
+<body>
+  <div class="blur"></div>
+  <div class="brightness"></div>
+  <div class="contrast"></div>
+  <div class="drop-shadow"></div>
+  <div class="grayscale"></div>
+  <div class="hue-rotate"></div>
+  <div class="invert"></div>
+  <div class="opacity"></div>
+  <div class="saturate"></div>
+  <div class="sepia"></div>
+
+  <!-- 可以给同个元素同时定义多个不同的滤镜可以叠加使用 -->
+  <div class="mix1"></div>
+  <!-- 多个相同滤镜，以不同的先后顺序作用于元素之上，最终产生的效果也将会是不一样的 -->
+  <div class="mix2"></div>
+</body>
+
+</html>

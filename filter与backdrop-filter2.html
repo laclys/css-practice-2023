@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background: url(./pics/pic.png);
+      background-size: contain;
+    }
+
+    .backdrop::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      backdrop-filter: grayscale(100%);
+      transition: 1s transform;
+    }
+
+    .backdrop:hover::before {
+      transform: translate(100%, 0);
+    }
+
+    /* 作用于元素本身 */
+    .filter {
+      filter: grayscale(100%);
+    }
+
+    /* 下面这样是不生效的因为！filter作用于元素本身！！！ */
+    
+    /* .filter::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      filter: grayscale(100%);
+    }
+
+    .filter:hover::before {
+      transform: translate(100%, 0);
+    } */
+  </style>
+</head>
+
+<body>
+  <!-- backdrop-filter的作用范围是元素背后区域的所有元素，而这个区域是可以移动的!!! -->
+  <div class="backdrop"></div>
+  <div class="filter"></div>
+</body>
+
+</html>

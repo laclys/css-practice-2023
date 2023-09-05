@@ -4,6 +4,8 @@
 
   
 
+* [BlurWordAnimation](https://laclys.github.io/css-practice-2023/BlurWordAnimation.html)
+* [BubbleRises](https://laclys.github.io/css-practice-2023/BubbleRises.html)
 * [CSS@property实现背景色渐变](https://laclys.github.io/css-practice-2023/CSS@property实现背景色渐变.html)
 * [Css3Filter](https://laclys.github.io/css-practice-2023/Css3Filter.html)
 * [IE-LOGO](https://laclys.github.io/css-practice-2023/IE-LOGO.html)
@@ -12,6 +14,7 @@
 * [MisakaMikoto-UseBoxShadow](https://laclys.github.io/css-practice-2023/MisakaMikoto-UseBoxShadow.html)
 * [NeonBorderAnimation](https://laclys.github.io/css-practice-2023/NeonBorderAnimation.html)
 * [NeonText](https://laclys.github.io/css-practice-2023/NeonText.html)
+* [PureCSSWave(卡卷波浪)](https://laclys.github.io/css-practice-2023/PureCSSWave(卡卷波浪).html)
 * [background-attachment滚动阴影](https://laclys.github.io/css-practice-2023/background-attachment滚动阴影.html)
 * [background-clip](https://laclys.github.io/css-practice-2023/background-clip.html)
 * [background-万花筒(多重角向渐变)](https://laclys.github.io/css-practice-2023/background-万花筒(多重角向渐变).html)
@@ -19,6 +22,7 @@
 * [backgroundUnderlineAnimation](https://laclys.github.io/css-practice-2023/backgroundUnderlineAnimation.html)
 * [background渐变三角形](https://laclys.github.io/css-practice-2023/background渐变三角形.html)
 * [background渐变背景动画](https://laclys.github.io/css-practice-2023/background渐变背景动画.html)
+* [blur与contrast添加圆角](https://laclys.github.io/css-practice-2023/blur与contrast添加圆角.html)
 * [box-shadow画云☁️](https://laclys.github.io/css-practice-2023/box-shadow画云☁️.html)
 * [clip-path-circle](https://laclys.github.io/css-practice-2023/clip-path-circle.html)
 * [clip-pathBasic](https://laclys.github.io/css-practice-2023/clip-pathBasic.html)
@@ -29,6 +33,8 @@
 * [clip-path文字断裂动画](https://laclys.github.io/css-practice-2023/clip-path文字断裂动画.html)
 * [conic-gradient扇形切换动画(mask)](https://laclys.github.io/css-practice-2023/conic-gradient扇形切换动画(mask).html)
 * [conic-gradient金字塔](https://laclys.github.io/css-practice-2023/conic-gradient金字塔.html)
+* [css优惠券波浪](https://laclys.github.io/css-practice-2023/css优惠券波浪.html)
+* [filterMixBetweenBlurAndContrast两小球相交融合](https://laclys.github.io/css-practice-2023/filterMixBetweenBlurAndContrast两小球相交融合.html)
 * [filter与backdrop-filter](https://laclys.github.io/css-practice-2023/filter与backdrop-filter.html)
 * [filter与backdrop-filter2](https://laclys.github.io/css-practice-2023/filter与backdrop-filter2.html)
 * [hue-rotate实现背景渐变](https://laclys.github.io/css-practice-2023/hue-rotate实现背景渐变.html)
@@ -45,6 +51,7 @@
 * [利用阴影复制自身图形](https://laclys.github.io/css-practice-2023/利用阴影复制自身图形.html)
 * [多行文本的渐隐消失](https://laclys.github.io/css-practice-2023/多行文本的渐隐消失.html)
 * [新拟态风格阴影EmbossedShadow](https://laclys.github.io/css-practice-2023/新拟态风格阴影EmbossedShadow.html)
+* [模糊实现彩色阴影filterBlur](https://laclys.github.io/css-practice-2023/模糊实现彩色阴影filterBlur.html)
 * [浮雕阴影](https://laclys.github.io/css-practice-2023/浮雕阴影.html)
 * [渐变叠加多层](https://laclys.github.io/css-practice-2023/渐变叠加多层.html)
 * [渐变实现波浪](https://laclys.github.io/css-practice-2023/渐变实现波浪.html)
@@ -59,6 +66,6 @@
 
   
 
-  Total 51  ✅
+  Total 58  ✅
   
 

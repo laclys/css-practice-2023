@@ -94,20 +94,38 @@ inset: 1px 2px 3px 4px;
 /* 等同于 `top: 1px; right: 2px; bottom: 3px; left: 4px;` */
 ```
 
+inset 属性只作用于定位元素。Internet Explorer 浏览器上不支持该属性！！！
+
 ### filter: opacity 与 opacity
+
 用法一致
+
 ```css
 div {
-    filter: opacity(35%);
+  filter: opacity(35%);
 }
 // OR
 div {
-    opacity: 0.35;
+  opacity: 0.35;
 }
-
 ```
+
 - filter 滤镜会导致 3D 失效和 position: fixed 定位失效，这个属于所有滤镜的特性。opacity 则不会
 - 使用 filter: opacity 能够更好地获得浏览器提供的硬件加速支持，也就是获得更好的性能。
-从层叠上下文和包含块的角度而言，filter: opacity 和 opacity 都会生成一个新的层叠上下文，
-但是只有 filter: opacity 会生成包含块（Containing Block）。当然，对于现代浏览器，
-这两者的性能差异，几乎可以忽略。
+  从层叠上下文和包含块的角度而言，filter: opacity 和 opacity 都会生成一个新的层叠上下文，
+  但是只有 filter: opacity 会生成包含块（Containing Block）。当然，对于现代浏览器，
+  这两者的性能差异，几乎可以忽略。
+
+### 混合模式
+
+- mix-blend-mode
+- background-blend-mode
+
+混合模式用于创建两个或多个元素之间互相混合的效果。可以将混合模式应用于元素、背景图片和边框等任何元素。
+
+什么时候使用混合模式: 元素/图片，在色彩方面遇到了一些问题（与色彩打交道），
+譬如透明遮罩、颜色翻转、反相、变暗、重叠展示等场景，就应该想到，可能可以利用混合模式来解决问题！
+
+- 混合模式也会导致 3D 效果失效!!!
+
+混合模式的核心就是：描述当元素重叠时，颜色应当如何呈现。

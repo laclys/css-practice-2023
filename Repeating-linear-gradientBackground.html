@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    div {
+      position: relative;
+      width: 240px;
+      height: 240px;
+      border: 2px solid #666;
+      box-shadow: 1px 1px 4px 2px #aaa;
+      margin: auto;
+      color: #333;
+      text-align: center;
+      font-size: 16px;
+      line-height: 520px;
+    }
+
+    div::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      transform: translate(110%, 0);
+      background:
+        repeating-linear-gradient(50deg,
+          #F7A37B,
+          #F7A37B 1em,
+          #FFDEA8 1em,
+          #FFDEA8 2em,
+          #D0E4B0 2em,
+          #D0E4B0 3em,
+          #7CC5D0 3em,
+          #7CC5D0 4em,
+          #00A2E1 4em,
+          #00A2E1 5em,
+          #0085C8 5em,
+          #0085C8 6em);
+      animation: move 5s infinite linear;
+      /* !!!!! 正片叠底 */
+      mix-blend-mode: multiply;
+    }
+
+    div::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      transform: translate(-110%, 0);
+      background:
+        repeating-linear-gradient(-50deg,
+          #F7A37B,
+          #F7A37B 1em,
+          #FFDEA8 1em,
+          #FFDEA8 2em,
+          #D0E4B0 2em,
+          #D0E4B0 3em,
+          #7CC5D0 3em,
+          #7CC5D0 4em,
+          #00A2E1 4em,
+          #00A2E1 5em,
+          #0085C8 5em,
+          #0085C8 6em);
+      animation: move 5s infinite linear;
+    }
+
+    @keyframes move {
+      30% {
+        transform: translate(0, 0);
+      }
+
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+</body>
+
+</html>

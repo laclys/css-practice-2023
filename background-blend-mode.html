@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .bgblend {
+      width: 225px;
+      height: 75px;
+      border: 2px dashed #999;
+      background:
+        linear-gradient(rgba(128, 64, 191, 1), rgba(128, 64, 191, 1)),
+        linear-gradient(rgba(255, 204, 0, 1), rgba(255, 204, 0, 1));
+      background-size: 150px 100%;
+      background-repeat: no-repeat;
+      background-position: 75px 0, 0 0;
+      /* 两个背景的重叠部分的颜色 */
+      background-blend-mode: overlay;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bgblend"></div>
+</body>
+
+</html>

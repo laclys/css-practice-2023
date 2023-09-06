@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      margin-top: 100px;
+      position: relative;
+    }
+
+    .container>div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+
+    .red {
+      background-color: rgba(255, 0, 0, .8);
+      transform: translateX(25%);
+    }
+
+    .green {
+      background-color: rgba(0, 255, 0, .8);
+      transform: translateX(-25%);
+    }
+
+    .blue {
+      background-color: rgba(0, 0, 255, .8);
+      transform: translateY(-25%);
+      mix-blend-mode: color;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="blue"></div>
+  </div>
+
+</body>
+
+</html>

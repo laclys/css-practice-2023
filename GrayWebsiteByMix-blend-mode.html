@@ -11,16 +11,27 @@
       width: 100%;
       height: 100%;
       overflow: scroll;
-      /* filter: grayscale(.9); */
+      background: #fff;
     }
+
+    /* 
+    
+  mix-blend-mode: hue;            // 色相
+  mix-blend-mode: saturation;     // 饱和度
+  mix-blend-mode: color;          // 颜色 
+  
+
+  上述 3 个混合模式，叠加一个黑色背景，都是可以实现内容的置灰的。
+  */
+
 
     html::before {
       content: "";
       position: absolute;
       /* 等同于 `top: 0; right: 0; bottom: 0; left: 0; */
       inset: 0;
-      /* 首屏置灰用这个，全局用filter,并且放在html中。 */
-      backdrop-filter: grayscale(105%);
+      background: black;
+      mix-blend-mode: color;
       pointer-events: none;
       z-index: 10;
     }
@@ -45,7 +56,7 @@
     }
 
     div:hover {
-      transform: scale(1.1);
+      transform: scale(1.3);
     }
   </style>
 </head>

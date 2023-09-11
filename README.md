@@ -62,7 +62,7 @@
 * [text-shadow](https://laclys.github.io/css-practice-2023/text-shadow.html)
 * [tiktokLOGO](https://laclys.github.io/css-practice-2023/tiktokLOGO.html)
 * [transform模拟渐变动画](https://laclys.github.io/css-practice-2023/transform模拟渐变动画.html)
-* [transition-delay实现按钮border动画效果 copy](https://laclys.github.io/css-practice-2023/transition-delay实现按钮border动画效果 copy.html)
+* [transition-delay实现按钮border动画效果](https://laclys.github.io/css-practice-2023/transition-delay实现按钮border动画效果.html)
 * [transition-delay实现按钮border动画效果circle](https://laclys.github.io/css-practice-2023/transition-delay实现按钮border动画效果circle.html)
 * [transitionHover](https://laclys.github.io/css-practice-2023/transitionHover.html)
 * [❤️](https://laclys.github.io/css-practice-2023/❤️.html)

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 120px;
+      height: 120px;
+      line-height: 120px;
+      border-radius: 50%;
+      position: relative;
+      box-shadow: inset 0 0 0 3px #ddd;
+      margin: 50px auto;
+      text-align: center;
+      color: #333;
+      font-size: 16px;
+      cursor: pointer;
+      transition: color 1s;
+      overflow: hidden;
+    }
+
+    div::before,
+    div::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      border: 3px solid transparent;
+      border-radius: 50%;
+    }
+
+    div:hover {
+      color: #00e2ff;
+    }
+
+    div:hover::before {
+      width: 120px;
+      height: 120px;
+      border-color: #00e2ff;
+      transition: border-top-color 0.25s linear, border-right-color 0.25s linear, border-bottom-color 0.25s linear, border-left-color 0.25s linear;
+      transition-delay: 0s, 0.25s, 0.5s, 0.75s;
+    }
+
+    div:hover::after {
+      width: 120px;
+      height: 120px;
+      border-top: 3px solid #00e2ff;
+      transform: rotate(270deg);
+      transition: transform 0.75s linear;
+      transition-delay: 0s;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 通过元素先高度后宽度的变化，让两条 border 的出现是有先后顺序感的 -->
+  <div>Btn</div>
+</body>
+
+</html>

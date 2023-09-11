@@ -134,6 +134,15 @@ div {
 
 诸如 `<img>` 、 `<input>`、 `<iframe>`，这几个标签是不支持类似 input::before 这种使用方式的
 
-  当 img 元素的 src 地址能够正常指向一个图片资源的时候， `<img>` 的 ::before 和 ::after 确实是不会生效的。
-  但是，如果 src 指向的是一个错误的地址，也就是图片无法正常被解析替换，在这种特殊的情况下，
-  大部分现代浏览器是支持这种状态下的元素能够有自己的伪元素 ::before 和 ::after 的
+当 img 元素的 src 地址能够正常指向一个图片资源的时候， `<img>` 的 ::before 和 ::after 确实是不会生效的。
+但是，如果 src 指向的是一个错误的地址，也就是图片无法正常被解析替换，在这种特殊的情况下，
+大部分现代浏览器是支持这种状态下的元素能够有自己的伪元素 ::before 和 ::after 的
+
+### CSS 过渡
+
+- 可以通过关键字 all 给所有属性设置过渡；
+- transition 支持多个属性的精细化控制；
+- 过渡效果支持延迟加载；（https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_animated_properties）
+  transition-duration 0 与非 0 切换的效果可以变相实现画板，刮刮乐效果 `background 99999999s`）
+  (当我们的鼠标想去到菜单界面的时候，由于我们的鼠标离开了按钮区域，导致出现了的菜单又消失不见,可以加加入 transition-duration)
+- 并非所有元素都是支持过渡动画的。

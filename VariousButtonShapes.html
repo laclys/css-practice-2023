@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      position: relative;
+      padding: 12px;
+      width: fit-content;
+      background: #e91e63;
+      border-radius: 10px 10px 0 0;
+    }
+
+    div::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: -20px;
+      bottom: 0;
+      background: #000;
+      background: radial-gradient(circle at 0 0, transparent 20px, #e91e63 21px);
+    }
+
+    div::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: -20px;
+      bottom: 0;
+      background: #000;
+      background: radial-gradient(circle at 100% 0, transparent 20px, #e91e63 21px);
+    }
+  </style>
+</head>
+
+<body>
+  <div>outside-circle</div>
+</body>
+
+</html>

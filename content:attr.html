@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .msg {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 200px;
+      height: 64px;
+      background-color: aqua;
+      border-radius: 9px;
+    }
+
+    .msg::before {
+      content: attr(count);
+      position: absolute;
+      right: 0px;
+      top: -8px;
+      border-radius: 12px;
+      padding: 0 8px;
+      background: deeppink;
+      font: 16px/1.5 sans-serif;
+      transform: translate(50%, 0);
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="msg" count="5">Message</div>
+</body>
+
+</html>

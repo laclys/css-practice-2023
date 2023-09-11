@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      padding: 150px;
+
+    }
+
+    div {
+      position: relative;
+      transform: rotate(45deg);
+      background: rgb(255, 20, 147);
+      width: 140px;
+      height: 140px;
+    }
+
+    div::before,
+    div::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -70px;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: rgb(255, 20, 147);
+    }
+
+    div::before {
+      top: -70px;
+      left: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+</body>
+
+</html>

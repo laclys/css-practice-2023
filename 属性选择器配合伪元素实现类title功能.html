@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img {
+      position: relative;
+      width: 150px;
+      height: 150px;
+    }
+
+    p {
+      position: relative;
+      font-size: 16px;
+    }
+
+    p[popTitle]:hover::before {
+      content: attr(popTitle);
+      position: absolute;
+      bottom: -20px;
+      left: 10px;
+      font-size: 12px;
+      background: linear-gradient(#fff, #eee);
+      padding: 2px 6px;
+      z-index: 10;
+      color: #333;
+      border: 1px solid #666;
+      border-radius: 5px;
+      box-shadow: 1px 1px 1px 1px #999;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="./pics/pic.png" title="misaka">
+  <!-- 上面图片的是原生的title -->
+  <!-- 响应太慢，通常鼠标 hover 上去要隔 1s 左右才会出现这个 title 框 -->
+
+  <p class="title" popTitle="TEXT popup">TEXT~~~~</p>
+  <p class="title" popTitle="TitleA popup">TITLE-A</p>
+</body>
+
+</html>

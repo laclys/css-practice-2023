@@ -7,6 +7,7 @@
 * [BlurWordAnimation](https://laclys.github.io/css-practice-2023/BlurWordAnimation.html)
 * [BubbleRises](https://laclys.github.io/css-practice-2023/BubbleRises.html)
 * [CSS@property实现背景色渐变](https://laclys.github.io/css-practice-2023/CSS@property实现背景色渐变.html)
+* [CSS变量实现动画函数复用](https://laclys.github.io/css-practice-2023/CSS变量实现动画函数复用.html)
 * [Css3Filter](https://laclys.github.io/css-practice-2023/Css3Filter.html)
 * [GrayWebsiteByMix-blend-mode](https://laclys.github.io/css-practice-2023/GrayWebsiteByMix-blend-mode.html)
 * [GrayWebsiteBybackdrop-filter](https://laclys.github.io/css-practice-2023/GrayWebsiteBybackdrop-filter.html)
@@ -19,6 +20,7 @@
 * [PureCSSWave(卡卷波浪)](https://laclys.github.io/css-practice-2023/PureCSSWave(卡卷波浪).html)
 * [Repeating-linear-gradientBackground](https://laclys.github.io/css-practice-2023/Repeating-linear-gradientBackground.html)
 * [VariousButtonShapes](https://laclys.github.io/css-practice-2023/VariousButtonShapes.html)
+* [animation-composition_Demo](https://laclys.github.io/css-practice-2023/animation-composition_Demo.html)
 * [background-attachment滚动阴影](https://laclys.github.io/css-practice-2023/background-attachment滚动阴影.html)
 * [background-blend-mode](https://laclys.github.io/css-practice-2023/background-blend-mode.html)
 * [background-blend-mode:Icon换色](https://laclys.github.io/css-practice-2023/background-blend-mode:Icon换色.html)
@@ -89,6 +91,6 @@
 
   
 
-  Total 81  ✅
+  Total 83  ✅
   
 

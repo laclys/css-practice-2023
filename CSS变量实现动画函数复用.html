@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body,
+    html {
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+
+    ul {
+      margin: auto;
+      width: 200px;
+      height: 200px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 12px;
+      list-style: none;
+    }
+
+    li {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #000;
+      list-style: none;
+      animation: move 2s linear
+    }
+
+    @keyframes move {
+
+      60%,
+      100% {
+        transform: translate(var(--end));
+        background: var(--color);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li style="--end: 150px; --color: red;"></li>
+    <li style="--end: 200px; --color: blue;"></li>
+    <li style="--end: 120px; --color: green;"></li>
+    <li id="ele"></li>
+  </ul>
+</body>
+
+<script>
+  // 通过JS控制 改写 style 属性
+  const color = 'yellow';
+  const distance = "200px";
+
+  document
+    .querySelector('#ele')
+    .setAttribute('style', `--end: ${distance}; --color: ${color}`);
+</script>
+
+</html>

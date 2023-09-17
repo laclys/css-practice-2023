@@ -146,3 +146,18 @@ div {
   transition-duration 0 与非 0 切换的效果可以变相实现画板，刮刮乐效果 `background 99999999s`）
   (当我们的鼠标想去到菜单界面的时候，由于我们的鼠标离开了按钮区域，导致出现了的菜单又消失不见,可以加加入 transition-duration)
 - 并非所有元素都是支持过渡动画的。
+
+### animation
+
+- 必须项：animation-name、animation-duration 和 @keyframes 规则。
+- 非必须项：animation-delay、animation-direction、animation-iteration-count、animation-play-state、animation-timing-function、animation-fill-mode、animation-composition，当然不是说它们不重要，只是不设置时，它们都有默认值。
+
+- animation-delay 的值可以为负值
+
+```
+animation-timing-function: ease; // 动画以低速开始，然后加快，在结束前变慢
+animation-timing-function: ease-in; // 动画以低速开始
+animation-timing-function: ease-out; // 动画以低速结束
+animation-timing-function: ease-in-out; // 动画以低速开始和结束
+animation-timing-function: linear; // 匀速，动画从头到尾的速度是相同的
+```

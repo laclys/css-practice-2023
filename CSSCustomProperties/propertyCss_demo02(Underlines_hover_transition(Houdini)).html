@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @property --offset {
+      syntax: '<length>';
+      inherits: false;
+      initial-value: 0;
+    }
+
+    p {
+      margin: auto;
+      font-size: 2em;
+      cursor: pointer;
+    }
+
+
+    .normal {
+      text-underline-offset: 1px;
+      text-decoration-line: underline;
+      text-decoration-color: #000;
+      transition: all .3s;
+
+    }
+
+    .normal:hover {
+      text-decoration-color: orange;
+      text-underline-offset: 10px;
+      color: orange;
+    }
+
+
+    .houdini {
+      text-underline-offset: var(--offset, 1px);
+      text-decoration: underline;
+      transition: --offset 400ms, text-decoration-color 400ms;
+
+    }
+
+    .houdini:hover {
+      --offset: 10px;
+      color: orange;
+      text-decoration-color: orange;
+    }
+  </style>
+</head>
+
+<body>
+  <p class="normal">Lorem ipsum dolog xye</p>
+  <p class="houdini">Lorem ipsum dolog xye</p>
+</body>
+
+</html>

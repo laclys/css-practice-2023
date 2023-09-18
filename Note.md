@@ -169,3 +169,37 @@ animation-timing-function: linear; // 匀速，动画从头到尾的速度是相
 - 通过 JavaScript 改写 style 属性进行 CSS 变量值的传递
 
 !!!calc 的没有字符串拼接的能力!!!!
+
+### CSS @property
+
+- syntax：该自定义属性的语法规则，也可以理解为表示定义的自定义属性的类型。
+- inherits：是否允许继承。
+- initial-value：初始值。
+
+@property 规则中的 `syntax` 和 `inherits` 描述符是必需的
+
+syntax 支持字段：
+
+```
+length
+number
+percentage
+length-percentage
+color
+image
+url
+integer
+angle
+time
+resolution
+transform-list
+transform-function
+custom-ident (a custom identifier string)
+
+```
+
+### CSS 自定义属性的作用及意义
+
+- 代码更加符合 DRY（Don‘t repeat yourself）原则，精简代码，减少冗余
+- CSS @property 解决了大量过往无法实现动画/过渡的交互场景。
+- 方便地从 JS 中读/写，统一修改，增强了 JavaScript 与 CSS 的联系。

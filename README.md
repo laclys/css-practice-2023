@@ -8,6 +8,9 @@
 * [BubbleRises](https://laclys.github.io/css-practice-2023/BubbleRises.html)
 * [CSS@property实现背景色渐变](https://laclys.github.io/css-practice-2023/CSS@property实现背景色渐变.html)
 * [CSSCustomProperties_demo01](https://laclys.github.io/css-practice-2023/CSSCustomProperties/CSSCustomProperties_demo01.html)
+* [propertyCss_demo01](https://laclys.github.io/css-practice-2023/CSSCustomProperties/propertyCss_demo01.html)
+* [propertyCss_demo02(Underlines_hover_transition(Houdini))](https://laclys.github.io/css-practice-2023/CSSCustomProperties/propertyCss_demo02(Underlines_hover_transition(Houdini)).html)
+* [propertyCss_demo03(Loading)](https://laclys.github.io/css-practice-2023/CSSCustomProperties/propertyCss_demo03(Loading).html)
 * [CSS变量实现动画函数复用](https://laclys.github.io/css-practice-2023/CSS变量实现动画函数复用.html)
 * [Css3Filter](https://laclys.github.io/css-practice-2023/Css3Filter.html)
 * [GrayWebsiteByMix-blend-mode](https://laclys.github.io/css-practice-2023/GrayWebsiteByMix-blend-mode.html)
@@ -92,6 +95,6 @@
 
   
 
-  Total 84  ✅
+  Total 87  ✅
   
 

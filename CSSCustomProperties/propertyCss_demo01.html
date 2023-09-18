@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @property --houdini-colorA {
+      syntax: '<color>';
+      inherits: false;
+      initial-value: #fff;
+    }
+
+    @property --houdini-colorB {
+      syntax: '<color>';
+      inherits: false;
+      initial-value: #000;
+    }
+
+    .property {
+      margin: 100px;
+      width: 200px;
+      height: 200px;
+      background: linear-gradient(45deg, var(--houdini-colorA), var(--houdini-colorB));
+      transition:
+        1s --houdini-colorA,
+        1s --houdini-colorB;
+
+    }
+
+    .property:hover {
+      --houdini-colorA: yellowgreen;
+      --houdini-colorB: deeppink;
+    }
+
+    :root {
+      --colorA: #fff;
+      --colorB: #000;
+    }
+
+    .bg {
+      margin: 100px;
+      width: 200px;
+      height: 200px;
+      background: linear-gradient(45deg, var(--colorA), var(--colorB));
+      transition: 1s background;
+
+    }
+
+    .bg:hover {
+      --colorA: yellowgreen;
+      --colorB: deeppink;
+    }
+  </style>
+</head>
+
+<body>
+  <!--定义变量 --houdini-colorA 和 --houdini-colorB，在 hover 变化的时候，改变这两个颜色
+  自定义变量设定过渡，而不是针对 background 这个属性设定过渡动画
+  如果针对background，定过渡动画想不会生效 不支持-->
+
+  <div class="property"></div>
+
+  <div class="bg"></div>
+
+  <!--我们就可以利用 CSS @property 自定义属性的这个能力，去填补修复以前无法直接过渡动画的一些效果了 -->
+
+
+  <!--背景渐变是无法进行动画效果的 -->
+</body>
+
+</html>

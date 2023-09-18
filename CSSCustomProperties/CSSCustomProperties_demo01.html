@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+      --color: blue;
+      --margin: 10px;
+    }
+
+    p {
+      color: var(--color);
+      /* CSS 自定义属性可以结合 CSS3 新增的函数 calc( ) 一起使用 */
+      text-indent: calc(var(--margin) * 10);
+    }
+
+    span {
+      padding-top: 50px;
+      --color: red;
+      color: var(--color);
+    }
+
+    /* 局部变量的优先级更高,生效的是red */
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+    }
+
+    li {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      /* 如果存在 --bgColor 变量，则使用这个变量的值作为背景色，否则，使用 #000 作为默认兜底值 */
+      background-color: var(--bgColor, #000);
+      list-style: none;
+    }
+
+    li:nth-child(1) {
+      --bgColor: #f00;
+    }
+
+    li:nth-child(3) {
+      --bgColor: #fc0;
+    }
+
+    li:nth-child(5) {
+      --bgColor: #690;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Demo01</p>
+  <span>Demo02</span>
+
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</body>
+
+</html>

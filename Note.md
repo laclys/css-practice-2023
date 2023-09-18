@@ -161,3 +161,11 @@ animation-timing-function: ease-out; // 动画以低速结束
 animation-timing-function: ease-in-out; // 动画以低速开始和结束
 animation-timing-function: linear; // 匀速，动画从头到尾的速度是相同的
 ```
+
+### CSS 自定义属性的传值方式
+
+- 通过 CSS 代码进行 CSS 变量值的传递；
+- 通过元素的 style 属性进行 CSS 变量值的传递；
+- 通过 JavaScript 改写 style 属性进行 CSS 变量值的传递
+
+!!!calc 的没有字符串拼接的能力!!!!

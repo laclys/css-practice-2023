@@ -7,6 +7,7 @@
 * [BlurWordAnimation](https://laclys.github.io/css-practice-2023/BlurWordAnimation.html)
 * [BubbleRises](https://laclys.github.io/css-practice-2023/BubbleRises.html)
 * [CSS@property实现背景色渐变](https://laclys.github.io/css-practice-2023/CSS@property实现背景色渐变.html)
+* [CSSCustomProperties_demo01](https://laclys.github.io/css-practice-2023/CSSCustomProperties/CSSCustomProperties_demo01.html)
 * [CSS变量实现动画函数复用](https://laclys.github.io/css-practice-2023/CSS变量实现动画函数复用.html)
 * [Css3Filter](https://laclys.github.io/css-practice-2023/Css3Filter.html)
 * [GrayWebsiteByMix-blend-mode](https://laclys.github.io/css-practice-2023/GrayWebsiteByMix-blend-mode.html)
@@ -91,6 +92,6 @@
 
   
 
-  Total 83  ✅
+  Total 84  ✅
   
 

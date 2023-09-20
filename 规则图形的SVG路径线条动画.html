@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        display: flex;
+      }
+
+      .container {
+        position: relative;
+        width: 250px;
+        height: 50px;
+        margin: auto;
+        cursor: pointer;
+      }
+      .container .rect {
+        width: 250px;
+        height: 50px;
+        stroke: #673ab7;
+        stroke-width: 1px;
+        fill: transparent;
+        transition: 0.5s ease-in-out;
+        stroke-dasharray: 100 500;
+        stroke-dashoffset: 225;
+      }
+      /* stroke-dasharray: 100 500 设置虚线边框的规则，
+      线段部分为 100px，间隔部分为 500px，
+      由于元素的高宽为 250px 和 50px，因此周长就是 600px，
+      所以，在 stroke-dasharray: 100 500 的规则下，
+      只能看到一条线段 */
+
+      /* stroke-dashoffset: 225; 225是“逆时针”偏移 */
+
+      .container .text {
+        position: absolute;
+        inset: 0;
+        font-family: 'Helvetica';
+        font-size: 1.5rem;
+        line-height: 50px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        transition: 0.3s;
+        transition-delay: 0.6s;
+      }
+
+      .container:hover .rect {
+        stroke: deeppink;
+        stroke-dasharray: 600 0;
+        /* 可以调整边框线段在运动过程中的方向 475正好是上半边中央 */
+        stroke-dashoffset: 475;
+        stroke-width: 3px;
+      }
+      /* stroke-dasharray: 600 0 的意思是，线段部分为 600px，
+      间隔部分为 0px，因为周长只有 600px，
+      相当于最终状态，只有一条线段 */
+
+      .container:hover .text {
+        background: deeppink;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <rect class="rect" />
+        <div class="text">Line Animations</div>
+      </svg>
+    </div>
+  </body>
+</html>

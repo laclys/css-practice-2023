@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      svg {
+        display: flex;
+        width: 250px;
+        height: 50px;
+        margin-bottom: 20px;
+      }
+      .rect {
+        width: 100%;
+        height: 100%;
+        stroke: #673ab7;
+        stroke-width: 2;
+        fill: transparent;
+      }
+      .rect1 {
+        /* 10 20 30 40 50 60 表示边框和间隔按照 1
+        0px 20px 30px 40px 50px 60px 的规律进行 */
+        stroke-dasharray: 10 20 30 40 50 60;
+        /* 边框的起点不一样 */
+        /* 偏移量 */
+        stroke-dashoffset: 0;
+      }
+      .rect2 {
+        stroke-dasharray: 10 20 30 40 50 60;
+        stroke-dashoffset: -20px;
+      }
+      .rect3 {
+        stroke-dasharray: 10 20 30 40 50 60;
+        /* 起点向右偏移40px */
+        stroke-dashoffset: -40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <rect class="rect rect1" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <rect class="rect rect2" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <rect class="rect rect3" />
+    </svg>
+  </body>
+</html>

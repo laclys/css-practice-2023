@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      svg {
+        display: flex;
+        width: 250px;
+        height: 50px;
+        margin-bottom: 20px;
+      }
+      .rect {
+        width: 100%;
+        height: 100%;
+        stroke: #673ab7;
+        stroke-width: 2;
+        fill: transparent;
+      }
+      .rect1 {
+        stroke-dasharray: 10 10;
+      }
+      .rect2 {
+        stroke-dasharray: 30 30;
+      }
+      .rect3 {
+        stroke-dasharray: 50 20;
+        /* 50是虚线长度 */
+        /* 20是虚线间宽度 */
+      }
+    </style>
+  </head>
+  <!-- 我们想实现一个虚线边框，在 CSS 中可以利用 dashed 关键字。
+    但是，每段虚线的长度、每段虚线线段的长度是无法控制的，
+    在 SVG 中利用 stroke-dasharray 就可以进行控制 -->
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <rect class="rect rect1" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <rect class="rect rect2" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <rect class="rect rect3" />
+    </svg>
+  </body>
+</html>

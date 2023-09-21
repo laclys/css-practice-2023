@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .outer {
+        width: 100px;
+        height: 100px;
+        background-color: #6a5acd8c;
+        margin: 200px;
+        position: relative;
+      }
+      /* (1)默认值旋转，红色为基点  默认值为 transform-origin: 50% 50% 0;*/
+      .inner {
+        transform: rotate(45deg);
+        /* transform-origin: 50% 50% 0; */
+        width: 100%;
+        height: 100%;
+        background-color: #6a5acdeb;
+      }
+      .outer .inner:nth-child(2) {
+        width: 5px;
+        height: 5px;
+        background-color: red;
+        transform: none;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+      }
+
+      /* （2）以顶部旋转90deg */
+      .inner.top {
+        transform: rotate(90deg);
+        transform-origin: 50% 0;
+        width: 100%;
+        height: 100%;
+        background-color: #6a5acdeb;
+      }
+
+      .outer .inner.top:nth-child(2) {
+        width: 5px;
+        height: 5px;
+        background-color: red;
+        transform: none;
+        position: absolute;
+        top: -2.5px;
+        left: 50px;
+      }
+      /*  以右部旋转150deg 红色为基点 */
+      .inner.right {
+        transform: rotate(150deg);
+        transform-origin: 100% 50%;
+        width: 100%;
+        height: 100%;
+        background-color: #6a5acdeb;
+      }
+      .inner.right:nth-child(2) {
+        width: 5px;
+        height: 5px;
+        background-color: red;
+        transform: none;
+        position: absolute;
+        top: 47.5px;
+        left: 97.5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 设置动画的基点(中心点) ， 适用于所有块级元素及某些内联元素 -->
+    <p>默认值,以自身原点旋转45deg</p>
+    <div class="outer">
+      <div class="inner"></div>
+      <div class="inner"></div>
+    </div>
+    <p>以顶部旋转90deg</p>
+    <div class="outer">
+      <div class="inner top"></div>
+      <div class="inner top"></div>
+    </div>
+    <p>以右部旋转150deg</p>
+    <div class="outer">
+      <div class="inner right"></div>
+      <div class="inner right"></div>
+    </div>
+  </body>
+</html>

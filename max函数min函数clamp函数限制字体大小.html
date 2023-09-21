@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        font-size: max(12px, min(3.75vw, 20px));
+        /* font-size: clamp(12px, 3.75vw, 20px); */
+        /* 这两个等价 */
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      字体的大小，最小是
+      12px，随着屏幕的变大，逐渐变大，但是为了避免老人机现象（随着屏幕变大，无限制变大），我们还需要限制一个最大值
+      20px。 我们可以利用 vw 来实现给字体赋动态值，假设在移动端，设备宽度的 CSS
+      像素为 320px 时，页面的字体宽度最小为 12px，换算成 vw 即是 320 / 100 =
+      3.2，也就是 1vw 在屏幕宽度为 320px 时候，表现为 3.2px，12px 约等于 3.75
+      vw。
+    </p>
+  </body>
+</html>

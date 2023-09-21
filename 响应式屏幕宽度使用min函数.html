@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      .wrapper {
+        width: min(100%, 500px);
+        height: 100px;
+        background: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 在屏幕宽度不足 500px 时候，也就表现为 width: 100%，反之，则表现为 width: 500px -->
+    <div class="wrapper">Container</div>
+  </body>
+</html>

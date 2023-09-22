@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 核心：：border-style: dashed 不支持动画，但是渐变支持 -->
+    <style>
+      div {
+        margin: 100px;
+        height: 100px;
+        width: 130px;
+        background: linear-gradient(90deg, #333 50%, transparent 0) repeat-x,
+          linear-gradient(90deg, #333 50%, transparent 0) repeat-x,
+          linear-gradient(0deg, #333 50%, transparent 0) repeat-y,
+          linear-gradient(0deg, #333 50%, transparent 0) repeat-y;
+        background-size: 4px 1px, 4px 1px, 1px 4px, 1px 4px;
+        background-position: 0 0, 0 100%, 0 0, 100% 0;
+      }
+      div:hover {
+        animation: linearGradientMove 0.3s infinite linear;
+      }
+
+      @keyframes linearGradientMove {
+        100% {
+          background-position: 4px 0, -4px 100%, 0 -4px, 100% 4px;
+        }
+      }
+
+      .solid-to-dash {
+        /* border 和 background 在盒子模型上位置的差异，视觉上会有一个很明显的错位的感觉 */
+        /* 把 border 替换成 outline，因为 outline 可以设置 outline-offset */
+        outline: 1px solid #333;
+        outline-offset: -1px;
+        background: none;
+      }
+
+      .solid-to-dash:hover {
+        /* border: none; */
+        background: linear-gradient(90deg, #333 50%, transparent 0) repeat-x,
+          linear-gradient(90deg, #333 50%, transparent 0) repeat-x,
+          linear-gradient(0deg, #333 50%, transparent 0) repeat-y,
+          linear-gradient(0deg, #333 50%, transparent 0) repeat-y;
+        background-size: 4px 1px, 4px 1px, 1px 4px, 1px 4px;
+        background-position: 0 0, 0 100%, 0 0, 100% 0;
+      }
+    </style>
+    <!-- linear-gradient(90deg, #333 50%, transparent 0)，
+    实现一段渐变内容，100% - 50% 的内容是 #333 颜色，剩下的一半 50% - 0 的颜色是透明色 transprent；
+    repeat-x 表示只在 x 方向重复；
+    background-size: 4px 1px 表示上述渐变内容的长宽分别是 4px\ 1px，这样配合 repeat-x就能实现只有 X 方向的重复；
+    最后的 background-position: 0 0 控制渐变的定位。 -->
+  </head>
+  <body>
+    <div></div>
+
+    <div class="solid-to-dash"></div>
+
+    <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+      <rect class="rect" />
+      <div class="text">Dashed Border</div>
+    </svg>
+  </body>
+</html>

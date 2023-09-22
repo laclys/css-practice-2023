@@ -39,6 +39,7 @@
 * [background渐变三角形](https://laclys.github.io/css-practice-2023/background渐变三角形.html)
 * [background渐变背景动画](https://laclys.github.io/css-practice-2023/background渐变背景动画.html)
 * [blur与contrast添加圆角](https://laclys.github.io/css-practice-2023/blur与contrast添加圆角.html)
+* [border-image-clip-path](https://laclys.github.io/css-practice-2023/border-image-clip-path.html)
 * [box-shadow画云☁️](https://laclys.github.io/css-practice-2023/box-shadow画云☁️.html)
 * [clip-path-circle](https://laclys.github.io/css-practice-2023/clip-path-circle.html)
 * [clip-pathBasic](https://laclys.github.io/css-practice-2023/clip-pathBasic.html)
@@ -55,6 +56,9 @@
 * [filterMixBetweenBlurAndContrast两小球相交融合](https://laclys.github.io/css-practice-2023/filterMixBetweenBlurAndContrast两小球相交融合.html)
 * [filter与backdrop-filter](https://laclys.github.io/css-practice-2023/filter与backdrop-filter.html)
 * [filter与backdrop-filter2](https://laclys.github.io/css-practice-2023/filter与backdrop-filter2.html)
+* [gradientBorderAnimation](https://laclys.github.io/css-practice-2023/gradientBorderAnimation.html)
+* [gradientBorderAnimation2](https://laclys.github.io/css-practice-2023/gradientBorderAnimation2.html)
+* [gradientBorderAnimation3(使用clip-path)](https://laclys.github.io/css-practice-2023/gradientBorderAnimation3(使用clip-path).html)
 * [hue-rotate](https://laclys.github.io/css-practice-2023/hue-rotate.html)
 * [hue-rotate实现背景渐变](https://laclys.github.io/css-practice-2023/hue-rotate实现背景渐变.html)
 * [img加载错误(伪元素处理)](https://laclys.github.io/css-practice-2023/img加载错误(伪元素处理).html)
@@ -66,6 +70,7 @@
 * [max函数min函数clamp函数限制字体大小](https://laclys.github.io/css-practice-2023/max函数min函数clamp函数限制字体大小.html)
 * [mix-blend-mode](https://laclys.github.io/css-practice-2023/mix-blend-mode.html)
 * [mix-blend-modeScreen(三球合一可用于loading)](https://laclys.github.io/css-practice-2023/mix-blend-modeScreen(三球合一可用于loading).html)
+* [overflow&transform实现边框hover](https://laclys.github.io/css-practice-2023/overflow&transform实现边框hover.html)
 * [radial-gradient](https://laclys.github.io/css-practice-2023/radial-gradient.html)
 * [shadowBasic](https://laclys.github.io/css-practice-2023/shadowBasic.html)
 * [shadow单侧阴影](https://laclys.github.io/css-practice-2023/shadow单侧阴影.html)
@@ -82,6 +87,8 @@
 * [利用阴影复制自身图形](https://laclys.github.io/css-practice-2023/利用阴影复制自身图形.html)
 * [刮刮乐ByTransition-delay](https://laclys.github.io/css-practice-2023/刮刮乐ByTransition-delay.html)
 * [响应式屏幕宽度使用min函数](https://laclys.github.io/css-practice-2023/响应式屏幕宽度使用min函数.html)
+* [基于transition-delay的边框长度变化动画(圆)](https://laclys.github.io/css-practice-2023/基于transition-delay的边框长度变化动画(圆).html)
+* [基于transition-delay的边框长度变化动画](https://laclys.github.io/css-practice-2023/基于transition-delay的边框长度变化动画.html)
 * [基于混合模式的故障艺术风格](https://laclys.github.io/css-practice-2023/基于混合模式的故障艺术风格.html)
 * [多行文本的渐隐消失](https://laclys.github.io/css-practice-2023/多行文本的渐隐消失.html)
 * [属性选择器配合伪元素实现类title功能](https://laclys.github.io/css-practice-2023/属性选择器配合伪元素实现类title功能.html)
@@ -94,10 +101,14 @@
 * [渐变阴影&彩色阴影](https://laclys.github.io/css-practice-2023/渐变阴影&彩色阴影.html)
 * [立体阴影](https://laclys.github.io/css-practice-2023/立体阴影.html)
 * [给clip-path图形添加边框](https://laclys.github.io/css-practice-2023/给clip-path图形添加边框.html)
+* [虚线边框动画(dashedBorderAnimation)](https://laclys.github.io/css-practice-2023/虚线边框动画(dashedBorderAnimation).html)
+* [虚线边框动画(dashedBorderAnimation)2](https://laclys.github.io/css-practice-2023/虚线边框动画(dashedBorderAnimation)2.html)
 * [规则图形的SVG路径线条动画](https://laclys.github.io/css-practice-2023/规则图形的SVG路径线条动画.html)
 * [规则图形的SVG路径线条动画2](https://laclys.github.io/css-practice-2023/规则图形的SVG路径线条动画2.html)
 * [规则图形的SVG路径线条动画3(六边形)](https://laclys.github.io/css-practice-2023/规则图形的SVG路径线条动画3(六边形).html)
 * [规则图形的SVG路径线条动画4(loading)](https://laclys.github.io/css-practice-2023/规则图形的SVG路径线条动画4(loading).html)
+* [边框嵌文字](https://laclys.github.io/css-practice-2023/边框嵌文字.html)
+* [边框长度变化动画(widthBorderAnimation)](https://laclys.github.io/css-practice-2023/边框长度变化动画(widthBorderAnimation).html)
 * [遮罩模拟boxShadow](https://laclys.github.io/css-practice-2023/遮罩模拟boxShadow.html)
 * [长投影](https://laclys.github.io/css-practice-2023/长投影.html)
 * [阴影模拟多层边框](https://laclys.github.io/css-practice-2023/阴影模拟多层边框.html)
@@ -105,6 +116,6 @@
 
   
 
-  Total 97  ✅
+  Total 108  ✅
   
 

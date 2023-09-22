@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .wrapper {
+        position: relative;
+        margin: 100px;
+        width: 250px;
+        height: 50px;
+        cursor: pointer;
+        box-sizing: border-box;
+      }
+      .rect {
+        width: 250px;
+        height: 50px;
+        stroke: #673ab7;
+        stroke-width: 1px;
+        fill: transparent;
+        stroke-dasharray: 8 4;
+        stroke-dashoffset: 0;
+      }
+
+      .wrapper:hover .rect {
+        animation: rotate 5s infinite linear;
+      }
+
+      .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        line-height: 50px;
+        text-align: center;
+      }
+      /* 调整 stroke-dasharray 的参数，得到不同长宽、间隙的虚线边框 */
+
+      /* 由于元素的宽高是 250px、50px，因此元素的周长就是 600px，
+      因此，只需要让 stroke-dashoffset 从 0 到 600 进行变化 */
+      @keyframes rotate {
+        100% {
+          stroke-dasharray: 8 4;
+          stroke-dashoffset: 600px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <rect class="rect" />
+        <div class="text">Dashed Border</div>
+      </svg>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body,
+      html {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background: yellowgreen;
+      }
+      div {
+        position: relative;
+        margin: auto;
+        width: 200px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        overflow: hidden;
+      }
+      div::after {
+        content: 'Hover Me';
+        position: absolute;
+        top: 4px;
+        bottom: 4px;
+        right: 4px;
+        left: 4px;
+        line-height: 92px;
+        font-size: 24px;
+        background: #fff;
+        border: 2px solid yellowgreen;
+        cursor: pointer;
+        color: yellowgreen;
+      }
+
+      div::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        right: -20px;
+        left: 0px;
+        background: #fff;
+        transform: rotateZ(-90deg) translate(-100%, -100%);
+        transform-origin: top left;
+        transition: transform 0.3s;
+        transition-timing-function: linear;
+      }
+
+      div:hover {
+        /* // 对比度 */
+        filter: contrast(1.2);
+      }
+
+      div:hover::before {
+        transform: rotateZ(0deg) translate(0%, 0%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 我们利用 overflow: hidden，把原本在容器外的一整个元素隐藏了起来； -->
+<!-- 利用了 transform-origin，控制了元素的旋转中心。 -->
+    <div></div>
+  </body>
+</html>

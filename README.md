@@ -65,6 +65,9 @@
 * [hue-rotate](https://laclys.github.io/css-practice-2023/hue-rotate.html)
 * [hue-rotate实现背景渐变](https://laclys.github.io/css-practice-2023/hue-rotate实现背景渐变.html)
 * [img加载错误(伪元素处理)](https://laclys.github.io/css-practice-2023/img加载错误(伪元素处理).html)
+* [multi_column_Layout_Demo](https://laclys.github.io/css-practice-2023/layout/multi_column_Layout_Demo.html)
+* [nav_list_by_margin_left_auto](https://laclys.github.io/css-practice-2023/layout/nav_list_by_margin_left_auto.html)
+* [使用margin:auto水平垂直居中元素](https://laclys.github.io/css-practice-2023/layout/使用margin:auto水平垂直居中元素.html)
 * [loading···](https://laclys.github.io/css-practice-2023/loading···.html)
 * [mask](https://laclys.github.io/css-practice-2023/mask.html)
 * [mask两张图片融合](https://laclys.github.io/css-practice-2023/mask两张图片融合.html)
@@ -119,6 +122,6 @@
 
   
 
-  Total 111  ✅
+  Total 114  ✅
   
 

@@ -246,4 +246,35 @@ div {
 (没有额外 JavaScript 代码的引入，纯 CSS 解决方案；
 能够很好地控制边界阈值，合理地进行缩放展示，避免传统的老人机现象（部分场景下字体过大）。)
 
+### Layout
 
+- `margin: auto` 在垂直方向上能够居中元素，需要让该元素处于 FFC（flex formatting context），或者 GFC（grid formatting context）上下文中
+
+可以利用 display: flex 等 flex、 grid 布局上下文下，利用 margin: auto 实现元素的水平垂直居中
+
+eg:
+
+```html
+<div class="g-container">
+  <div class="g-box"></div>
+</div>
+```
+
+```css
+.g-container {
+  display: flex;
+}
+
+.g-box {
+  margin: auto;
+}
+```
+
+- 在通过 `justify-content` 和`align-self`进行对齐之前，任何正处于空闲的空间都会分配到该维度中的自动 `margin` 中去
+
+Note: If free space is distributed to auto margins, the alignment properties will have no effect in that dimension because the margins will have stolen all the free space left over after flexing.
+
+- 块格式化上下文中 margin-top 和 margin-bottom 的值如果是 auto，则它们的值都为 0。
+- flex 格式化上下文中，在通过 justify-content 和 align-self 进行对齐之前，任何正处于空闲的空间都会分配到该方向的自动 margin 中去。
+- 单个方向上的自动 margin 也非常有用，它的计算值为该方向上的剩余空间。
+- 使用了自动 margin 的 flex 子项目，它们父元素设置的 justify-content 以及它们本身的 align-self 将不再生效。

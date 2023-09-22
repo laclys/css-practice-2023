@@ -22,10 +22,13 @@
 * [MisakaMikoto-UseBoxShadow](https://laclys.github.io/css-practice-2023/MisakaMikoto-UseBoxShadow.html)
 * [NeonBorderAnimation](https://laclys.github.io/css-practice-2023/NeonBorderAnimation.html)
 * [NeonText](https://laclys.github.io/css-practice-2023/NeonText.html)
+* [Person&Earth](https://laclys.github.io/css-practice-2023/Person&Earth.html)
 * [PureCSSWave(卡卷波浪)](https://laclys.github.io/css-practice-2023/PureCSSWave(卡卷波浪).html)
 * [Repeating-linear-gradientBackground](https://laclys.github.io/css-practice-2023/Repeating-linear-gradientBackground.html)
+* [SVGTextLineEffect](https://laclys.github.io/css-practice-2023/SVGTextLineEffect.html)
 * [SVG_stroke-dasharray](https://laclys.github.io/css-practice-2023/SVG_stroke-dasharray.html)
 * [SVG_stroke-dashoffset](https://laclys.github.io/css-practice-2023/SVG_stroke-dashoffset.html)
+* [SVGfeturbulence作用于文字](https://laclys.github.io/css-practice-2023/SVGfeturbulence作用于文字.html)
 * [VariousButtonShapes](https://laclys.github.io/css-practice-2023/VariousButtonShapes.html)
 * [animation-composition_Demo](https://laclys.github.io/css-practice-2023/animation-composition_Demo.html)
 * [background-attachment滚动阴影](https://laclys.github.io/css-practice-2023/background-attachment滚动阴影.html)
@@ -116,6 +119,6 @@
 
   
 
-  Total 108  ✅
+  Total 111  ✅
   
 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        filter: url('#filter');
+      }
+      div {
+        width: 300px;
+        background: linear-gradient(#fff, #999, #ddd, #888);
+        background-clip: text;
+      }
+    </style>
+  </head>
+  <body>
+    <div>SMOKE</div>
+    <svg width="0">
+      <filter id="filter">
+        <feTurbulence
+          id="turbulence"
+          type="fractalNoise"
+          baseFrequency=".03"
+          numOctaves="20"
+        />
+        <feDisplacementMap in="SourceGraphic" scale="30" />
+      </filter>
+    </svg>
+  </body>
+</html>
